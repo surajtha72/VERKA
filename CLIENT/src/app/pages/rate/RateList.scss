@@ -1,0 +1,117 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.ratelist {
+  position: relative;
+  width: calc(100% - 18vw);
+  .disabled-button {
+    opacity: 0.5;
+  }
+
+  .Cbody {
+    width: 95%;
+    margin-top: 1vw;
+  }
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation3.css-3su884-MuiPaper-root {
+    padding: 1vw;
+    background-color: $paper-white;
+  }
+
+  &__container {
+    @include flexColumnACenter;
+    background: $bg_light_grey;
+    height: 100%;
+  }
+  &__header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: $font_xverysmall $font_xverysmall;
+    @include flexColumnACenter;
+    background: $primary_white;
+    &__section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__logo {
+        width: 98%;
+        img {
+          width: 2vw;
+          height: 2vw;
+        }
+      }
+      &__main {
+        padding: 0 0 0.3vw 0;
+        @include flexbetween;
+        flex-direction: column;
+        h4 {
+          font-size: $font_button;
+        }
+        h5 {
+          font-size: $font_verysmall;
+          color: $font_grey;
+          font-weight: 400;
+        }
+      }
+      &__bottom {
+        width: 14vw;
+      }
+    }
+    border-bottom: 1px solid #0e419d;
+  }
+  &__table {
+    padding: $font_xlarge 0;
+    width: 98%;
+    // height: 590px;
+    &__header {
+      padding: 0 0 $font_xlarge 0;
+      &__section {
+        @include flexbetween;
+        input {
+          width: 25%;
+        }
+        button {
+          width: auto;
+          border: 1px solid grey;
+          background: #0e419d;
+          padding: 0.6vw 2vw;
+          border-radius: $font_xsmall;
+          color: $primary_white;
+        }
+      }
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #0e419d;
+      color: $primary_white;
+    }
+    .striped-table tbody tr,
+    th {
+      background-color: transparent;
+      font-size: $font_xsmall !important;
+      color: $primary_white;
+    }
+    .striped-table tbody tr,
+    td {
+      background-color: $paper-white !important;
+    }
+    .striped-table tbody tr:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+    .striped-table tbody tr:nth-child(even) {
+      background-color: #c9c6c6;
+    }
+  }
+  &__popup {
+    position: absolute;
+    top: 5.9vw;
+    width: 100%;
+    @include flexJCenter;
+    background: $bg_light_grey;
+    &__container {
+      width: 90%;
+    }
+  }
+}

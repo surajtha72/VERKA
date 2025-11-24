@@ -1,0 +1,105 @@
+@import "styles/mixins.scss";
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.u_width {
+  width: 80%;
+  height: calc(100vh - 75px);
+  overflow: auto;
+  position: relative;
+}
+
+.u_none {
+  border: none;
+}
+
+.u_page {
+  margin: 2rem 4rem;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.u_oveflow_auto {
+  overflow: auto;
+}
+
+.u_display_flex {
+  display: flex;
+}
+
+.u_flex_1 {
+  flex: 1;
+}
+
+.u_flex {
+  display: flex;
+}
+
+.u_text_align_center {
+  text-align: center;
+}
+.u_justify-content_center {
+  justify-content: center;
+}
+
+.u_justify-content_between {
+  justify-content: space-between;
+}
+
+.u_align_items {
+  align-items: center;
+}
+
+.u_cursor_pointer {
+  cursor: pointer;
+}
+
+.u_cursor_default {
+  cursor: default;
+}
+
+.u_text_transform_capitalize {
+  text-transform: capitalize;
+}
+
+.u_opacity_05 {
+  opacity: 0.5;
+}
+
+.u_posision_rel {
+  position: relative;
+}
+
+.u_emptyData {
+  @include absoluteCenter;
+  font-family: $monstserrat_semibold;
+  font-size: $font_regular;
+  opacity: 0.65;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: black;
+  text-align: center;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.u_arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #b8c5d3;
+}
+
+@media only screen and (max-width: 576px) {
+  .u_page {
+    margin: 2rem;
+  }
+}

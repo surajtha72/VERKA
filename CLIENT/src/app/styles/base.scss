@@ -1,0 +1,52 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// html {
+//   font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+// }
+
+body {
+  margin: 0;
+  padding: 0%;
+  max-width: 2600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: $monstserrat_regular;
+  background-color: $color-white-primary;
+  width: 100%;
+  height: calc(100% - 75px);
+}
+
+@media all and (min-width: 1920px) {
+  // define your rem value
+}
+
+@media all and (min-width: 1600px) {
+  // define your rem value
+}
+
+@media all and (min-width: 1440px) {
+  // define your rem value
+}
+
+@media all and (min-width: 1299px) {
+  // define your rem value
+}
+
+@media all and (min-width: 1024px) {
+  // define your rem value
+}
+
+@media all and (max-width: 768px) {
+  // define your rem value
+}

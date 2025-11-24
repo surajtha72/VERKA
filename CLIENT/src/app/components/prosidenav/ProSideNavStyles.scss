@@ -1,0 +1,131 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.sidebar-container {
+  position: relative;
+  width: 20vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #0e419d;
+}
+
+.sidebar {
+  position: sticky;
+  height: 100vh;
+  width: 20vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #0e419d;
+  display: flex; /* Add flex display to center the footer */
+  flex-direction: column; /* Stack the children vertically */
+}
+
+.sidebar-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: medium;
+  padding: 40px;
+  text-align: center;
+  top: 50px;
+}
+
+.sidebar-footer a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.innersubmenu {
+  color: black;
+}
+
+.white-text-menu-item {
+  color: black;
+}
+
+.white-text-menu-item:hover {
+  color: black;
+}
+
+.css-z5rm24 {
+  background-color: #eeefff !important;
+}
+
+.ps-menuitem-root.css-q21uj2 {
+  color: black;
+}
+
+.ps-menuitem-root.css-6s48aw {
+  color: black;
+}
+.ps-menuitem-root.css-6s48aw:hover {
+  color: black;
+}
+.ps-menuitem-root.css-6s48aw :active {
+  color: black;
+}
+
+.ps-sidebar-container.css-dip3t8 {
+  background-color: #0e419d;
+  color: #ffff;
+}
+.ps-menu-button :hover {
+  color: black;
+}
+
+.ps-menu-button :active {
+  color: black;
+}
+
+.ps-menuitem-root.css-o10vvb {
+  color: black;
+}
+
+.ps-menuitem-root.ps-submenu-root.css-1wy1i76:active {
+  background-color: #d2e3fc;
+  color: black;
+}
+.ps-menuitem-root.ps-submenu-root.css-1wy1i76:hover {
+  background-color: #d2e3fc !important;
+  color: black;
+}
+.ps-menu-button.ps-open:hover {
+  background-color: #d2e3fc;
+  color: black;
+}
+
+.ps-menuitem-root.css-nwj8xd:active {
+  background-color: #0045ac;
+  color: black;
+}
+
+.ps-sidebar-root {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.ps-menuitem-root.css-nwj8xd {
+  color: #ffff;
+}
+
+.ps-menuitem-root.css-nwj8xd:hover {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.pro-sidebar {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+}

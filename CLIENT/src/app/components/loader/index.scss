@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.loaderWrapper {
+  @include flexCenter;
+  overflow: hidden;
+  z-index: 100;
+
+  &__loader {
+    @include absoluteCenter;
+    // border: 4px solid black;
+    // border-radius: 50%;
+    // border-top: 4px solid black;
+    // width: $font_top9;
+    // height: $font_top9;
+    // -webkit-animation: spin 2s linear infinite;
+    // animation: spin 2s linear infinite;
+    // -webkit-animation: spin 3s linear infinite;
+    // animation: spin 3s linear infinite;
+    img {
+      width: $font_top9;
+      height: $font_top9;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+  }
+
+  &__smallLoader {
+    // border: 2px solid black;
+    // border-top: 2px solid black;
+    img {
+      width: $font_large;
+      height: $font_large;
+    }
+  }
+  &__tableLoader {
+    // border: 2px solid black;
+    // border-top: 2px solid black;
+    img {
+      width: $font_large;
+      height: $font_large;
+    }
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.loaderMinHeight {
+  height: 70rem;
+}

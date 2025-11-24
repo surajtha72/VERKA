@@ -1,0 +1,162 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.download {
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  right: 10px;
+  top: 1vw;
+}
+
+.export {
+  position: absolute;
+  right: 60px;
+  top: 1vw;
+  width: auto;
+  border: 1px solid grey;
+  background: #0e419d;
+  padding: 0.6vw 2vw;
+  border-radius: $font_xsmall;
+  color: $primary_white;
+}
+
+.empty_data {
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.back {
+  position: absolute;
+
+  img {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+.krishi {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  font-family: "Times New Roman";
+  padding-right: 5%;
+  padding-left: 5%;
+
+  &__header {
+    border-bottom: 2px solid black;
+
+    &__heading {
+      @include flexJCenter;
+
+      p {
+        font-family: "Times New Roman";
+        font-size: $font_medium;
+        font-weight: 500;
+        padding-top: 1vw;
+      }
+    }
+
+    &__bottomheading {
+      @include flexJCenter;
+      border-bottom: 2px solid black;
+
+      p {
+        font-family: "Times New Roman";
+        margin: 0.3vw;
+        font-size: $font_xsmall;
+        margin-right: 0.8vw;
+        margin-left: 1vw;
+      }
+    }
+  }
+
+  &__table {
+    @include flexJCenter;
+    margin-bottom: 1vw;
+
+    &__content {
+      // padding-top: 80px;
+      border-bottom: 2px solid black;
+      display: flex;
+      justify-content: flex-start;
+
+      p {
+        font-family: "Times New Roman";
+        font-size: $font_xsmall;
+        margin: 0.3vw;
+        width: 10%;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    &__content1 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: "Times New Roman";
+        font-size: $font_xsmall;
+        margin: 0.3vw;
+        width: 25%;
+        text-align: center;
+      }
+    }
+
+    &__content2 {
+      border-bottom: 1px solid black;
+      border-bottom-style: dashed;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: "Times New Roman";
+        font-size: $font_xsmall;
+        margin: 0.3vw;
+        width: 25%;
+        text-align: center;
+      }
+    }
+
+    &__total {
+      border-bottom: 1px solid black;
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: "Times New Roman";
+        font-size: $font_xsmall;
+        margin: 0.3vw;
+        width: 25%;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__footer {
+    align-items: flex-end;
+    margin-left: auto;
+
+    margin-right: 0 p {
+      font-family: "Times New Roman";
+      font-size: $font_xsmall;
+      margin: 0.3vw;
+      text-align: center;
+    }
+  }
+}

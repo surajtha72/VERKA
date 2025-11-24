@@ -1,0 +1,645 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.download {
+  font-family: 'Times New Roman';
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  right: 10px;
+  top: 1vw;
+}
+
+.print {
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  right: 4vw;
+  top: 1vw;
+}
+
+.empty_data {
+  font-family: 'Times New Roman';
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-family: 'Times New Roman';
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Times New Roman';
+    text-align: center;
+  }
+}
+
+.back {
+  font-family: 'Times New Roman';
+  position: absolute;
+
+  img {
+    font-family: 'Times New Roman';
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+.invoice {
+  font-family: 'Times New Roman';
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  // width: calc(100% - 18vw);
+  overflow-y: scroll;
+  font-family: 'Times New Roman';
+
+  &__header {
+    font-family: 'Times New Roman';
+    border-bottom: 2px solid black;
+
+    &__heading {
+      font-family: 'Times New Roman';
+      @include flexJCenter;
+
+      p {
+        color: #000000;
+        font-family: 'Times New Roman';
+        font-size: $font_medium;
+        font-weight: 600;
+        padding-top: .5vw;
+      }
+    }
+
+    &__address {
+      font-family: 'Times New Roman';
+      @include flexJCenter;
+
+      p {
+        color: #000000;
+        font-family: 'Times New Roman';
+        margin: 0.3vw;
+        font-size: 1.2em;
+        margin-right: 0.8vw;
+        margin-left: 1vw;
+      }
+    }
+
+    &__telephone {
+      font-family: 'Times New Roman';
+      @include flexJCenter;
+
+      p {
+        color: #000000;
+        font-family: 'Times New Roman';
+        margin: 0.3vw;
+        font-size: 1.2em;
+      }
+    }
+
+    &__tollfree {
+      font-family: 'Times New Roman';
+      @include flexJCenter;
+
+      p {
+        color: #000000;
+        font-family: 'Times New Roman';
+        margin: 0.3vw;
+        margin-bottom: 0.5vw;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  &__date {
+    font-family: 'Times New Roman';
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+
+    &__leftside {
+      font-family: 'Times New Roman';
+
+      &__milk {
+        font-family: 'Times New Roman';
+        display: flex;
+
+        p {
+          color: #000000;
+          font-family: 'Times New Roman';
+          margin: 0.3vw;
+          font-size: 1.2em;
+          margin-right: 1vw;
+        }
+      }
+
+      &__agent {
+        font-family: 'Times New Roman';
+        display: flex;
+
+        p {
+          color: #000000;
+          font-family: 'Times New Roman';
+          margin: 0.3vw;
+          font-size: 1em;
+          margin-right: 1vw;
+          margin-bottom: 0.1vw;
+        }
+      }
+    }
+
+    &__rightside {
+      font-family: 'Times New Roman';
+
+      &__print {
+        font-family: 'Times New Roman';
+        display: flex;
+
+        p {
+          color: #000000;
+          font-family: 'Times New Roman';
+          margin: 0.3vw;
+          font-size: 1em;
+          margin-right: 1vw;
+        }
+      }
+
+      &__route {
+        font-family: 'Times New Roman';
+        display: flex;
+
+        p {
+          color: #000000;
+          font-family: 'Times New Roman';
+          margin: 0.3vw;
+          font-size: 1em;
+          margin-right: 1vw;
+          margin-bottom: 0.1vw;
+        }
+      }
+    }
+  }
+
+  &__table {
+    font-family: 'Times New Roman';
+    // @include flexJCenter;
+    width: 100%;
+    margin-bottom: 1vw;
+
+    &__content {
+      font-family: 'Times New Roman';
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 10px;
+
+      &__header {
+        font-family: 'Times New Roman';
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid black;
+        padding: 0.53vw;
+
+        p {
+          color: #000000;
+          font-family: 'Times New Roman';
+          font-size: 1.2em;
+        }
+      }
+
+      &__shift {
+        font-family: 'Times New Roman';
+        display: flex;
+        justify-content: space-between;
+
+        &__leftside {
+          font-family: 'Times New Roman';
+          display: flex;
+          justify-content: center;
+          width: 47%;
+          border-bottom: 2px solid black;
+
+          p {
+            color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 1.2em;
+            font-weight: 540;
+            margin: 0.1vw;
+          }
+        }
+
+        &__rightside {
+          font-family: 'Times New Roman';
+          display: flex;
+          justify-content: center;
+          width: 47%;
+          border-bottom: 2px solid black;
+
+          p {
+            color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 1.2em;
+            font-weight: 540;
+            margin: 0.1vw;
+          }
+        }
+      }
+
+      &__shiftheader {
+        font-family: 'Times New Roman';
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+
+        &__leftside {
+          font-family: 'Times New Roman';
+
+          &__header {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+            width: 47%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1em;
+              width: 25%;
+              text-align: center;
+              margin: 0.1vw;
+            }
+          }
+        }
+
+        &__rightside {
+          font-family: 'Times New Roman';
+
+          &__header {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+            width: 47%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1em;
+              width: 25%;
+              text-align: center;
+              margin: 0.1vw;
+            }
+          }
+        }
+      }
+
+      &__shiftcontent {
+        font-family: 'Times New Roman';
+        border-bottom: 2px solid black;
+        overflow-y: scroll;
+
+        &__buffalo {
+          font-family: 'Times New Roman';
+
+          p {
+            color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 1.2em;
+            font-weight: 450;
+            margin: 0.1vw;
+            @include flexJCenter;
+          }
+
+          &__content {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+
+            &__leftside {
+              font-family: 'Times New Roman';
+              display: flex;
+              justify-content: space-between;
+              width: 47%;
+
+              p {
+                color: #000000;
+                font-family: 'Times New Roman';
+                font-size: 1.2em;
+                margin: 0vw;
+                width: 13%;
+                text-align: center;
+              }
+            }
+
+            &__centerside {
+              font-family: 'Times New Roman';
+              border: 1px solid black;
+            }
+
+            &__rightside {
+              font-family: 'Times New Roman';
+              display: flex;
+              justify-content: space-between;
+              width: 47%;
+
+              p {
+                color: #000000;
+                font-family: 'Times New Roman';
+                font-size: 1.2em;
+                margin: 0vw;
+                width: 25%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        &__cow {
+          font-family: 'Times New Roman';
+
+          p {
+            color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 1.2em;
+            font-weight: 450;
+            margin: 0vw;
+            @include flexJCenter;
+          }
+
+          &__content {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+
+            &__leftside {
+              font-family: 'Times New Roman';
+              display: flex;
+              justify-content: space-between;
+              width: 47%;
+
+              p {
+                color: #000000;
+                font-family: 'Times New Roman';
+                font-size: 1.2em;
+                width: 13%;
+                margin: 0vw;
+                text-align: center;
+              }
+            }
+
+            &__centerside {
+              font-family: 'Times New Roman';
+              border: 1px solid black;
+            }
+
+            &__rightside {
+              font-family: 'Times New Roman';
+              display: flex;
+              justify-content: space-between;
+              width: 47%;
+
+              p {
+                color: #000000;
+                font-family: 'Times New Roman';
+                font-size: 1.2em;
+                width: 25%;
+                margin: 0vw;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      &__footer {
+        font-family: 'Times New Roman';
+
+        // @include flexJCenter;
+        &__content {
+          font-family: 'Times New Roman';
+          display: flex;
+          justify-content: space-between;
+
+          &__leftside {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+            width: 47%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-weight: 600;
+              font-size: 1.2em;
+              margin: 0.3vw;
+              width: 25%;
+              text-align: center;
+            }
+          }
+
+          &__rightside {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-between;
+            width: 47%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-weight: 600;
+              font-size: 1.2em;
+              margin: 0.3vw;
+              width: 25%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    font-family: 'Times New Roman';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+      font-family: 'Times New Roman';
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &__leftside {
+        font-family: 'Times New Roman';
+        width: 58%;
+
+        &__table {
+          font-family: 'Times New Roman';
+          width: 100%;
+          border-bottom: 2px solid black;
+
+          &__header {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1.2em;
+              width: 25%;
+              margin: 0.3vw;
+              text-align: center;
+            }
+          }
+
+          &__content {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1.2em;
+              width: 25%;
+              margin: 0.3vw;
+              text-align: center;
+            }
+          }
+        }
+
+        &__tabledesc {
+          font-family: 'Times New Roman';
+          width: 100%;
+          border: 2px solid black;
+          margin-top: 0.5vw;
+
+          &__header {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border-bottom: 2px solid black;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1em;
+              width: 25%;
+              margin: 0.3vw;
+              text-align: center;
+            }
+          }
+
+          &__content {
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1.1em;
+              width: 25%;
+              margin: 0.3vw;
+              text-align: center;
+            }
+          }
+
+          &__content1 {
+            font-family: 'Times New Roman';
+            border: 2px solid black;
+            border-top: none;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border-bottom: 2px solid black;
+
+            p {
+              color: #000000;
+              font-family: 'Times New Roman';
+              font-size: 1.2em;
+              width: 25%;
+              margin: 0.3vw;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      &__rightside {
+        font-family: 'Times New Roman';
+        width: 40%;
+
+        &__table {
+          font-family: 'Times New Roman';
+          display: flex;
+          flex-direction: column;
+
+          &__dataone {
+            font-family: 'Times New Roman';
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid black;
+
+            &__top {
+              color: #000000;
+              font-family: 'Times New Roman';
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+
+              &__left {
+                font-family: 'Times New Roman';
+                width: 52%;
+                display: flex;
+                justify-content: flex-end;
+
+                p {
+                  color: #000000;
+                  font-family: 'Times New Roman';
+                  font-size: 1.2em;
+                  margin: 0.3vw;
+                }
+              }
+
+              &__right {
+                font-family: 'Times New Roman';
+                width: 40%;
+                display: flex;
+                justify-content: flex-end;
+
+                p {
+                  color: #000000;
+                  font-family: 'Times New Roman';
+                  font-size: 1.2em;
+                  margin: 0.3vw;
+                }
+              }
+            }
+
+            &__bottom {
+              font-family: 'Times New Roman';
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              p {
+                color: #000000;
+                font-family: 'Times New Roman';
+                font-size: 1.1em;
+                margin: 0.3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

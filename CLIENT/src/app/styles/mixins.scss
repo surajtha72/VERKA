@@ -1,0 +1,206 @@
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin customAbsoluteCenter($top, $left, $right, $bottom) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate($right, $bottom);
+}
+
+@mixin verticalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin absolueflexcenter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin horizontalCenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin relativeblock {
+  position: relative;
+  display: block;
+  justify-content: center;
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+}
+
+@mixin relativewidth {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+@mixin relativeflex {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin columnflexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexbetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexrowbetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flexaround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flexJCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flexJStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin flexJEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flexcolumnAEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@mixin flexAcenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin gradientBackground {
+  background-image: linear-gradient(to right, $alizarin_crimson, $tamarillo, $cab_sav);
+}
+
+@mixin customFlex($justify, $alignitems) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignitems;
+}
+
+@mixin customFlexCenter($flex-direction,$justify-content,$align-items){
+  display: flex;
+  flex-direction:$flex-direction;
+  justify-content:$justify-content;
+  align-items: $align-items;
+}
+
+@mixin allcenter {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+// padding and margin none
+
+@mixin marpad {
+  margin: 0;
+  padding: 0;
+}
+
+// none to display
+
+@mixin displaynone{
+  display: none;
+}
+
+@mixin listnone {
+  list-style-type: none;
+}
+
+@mixin textnone {
+  text-decoration: none;
+}
+// row and column flex directions 
+
+@mixin rowevenly {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@mixin flexrowacenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexcolumnR {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@mixin flexColumnACenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexcolumnJCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin textc {
+  text-align: center;
+}

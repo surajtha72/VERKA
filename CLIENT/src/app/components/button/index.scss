@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+
+.button {
+  margin: $font_verysmall;
+  width: 30%;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;;
+  font-size: $font_verysmall;
+  font-weight: 600;
+  line-height: 1.21;
+
+  padding: $font_small 0;
+  border-radius: 34px;
+  // box-shadow: 6px 6px 9px 0 black, -1px -1px 4px 0 black;
+  // border: solid 1px #468936;
+  background: #0e419d;
+
+  &__disabled {
+    box-shadow: 6px 6px 9px 0 #42597a, -1px -1px 4px 0 #42597a;
+    background: #42597a;
+    border: 1px solid #42597a;
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: white;
+  }
+}
+
+.button:active {
+  box-shadow: inset -6px -6px 6px 0 #468936,
+    inset 6px 6px 8px 0 #468936, inset 6px 6px 8px 0 #468936,
+    inset -6px -6px 6px 0 #468936 !important;
+  border-style: solid;
+  border-width: 1px;
+  border-image-slice: 1;
+  background:#468936 !important;
+  background-origin: border-box;
+}

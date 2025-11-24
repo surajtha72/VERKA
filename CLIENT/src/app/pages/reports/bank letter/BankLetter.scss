@@ -1,0 +1,105 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.download {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    right: 10px;
+    top: 1vw;
+}
+
+.empty_data {
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.back {
+    position: absolute;
+
+    img {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    // width: calc(100% - 18vw);
+    overflow-y: scroll;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 5%;
+    padding-left: 5%;
+    &__header {
+        
+        &__heading {
+            @include flexJCenter;
+            justify-content: space-around;
+            margin-top: 20%;
+            border-top: 2px solid black;
+            padding-top: 10px;
+            p {
+                font-size:x-large;
+                margin-right: 0.8vw;
+                margin-left: 1vw;
+                font-family: "Courier New";
+            }
+        }
+    }
+
+    &__table {
+        @include flexJCenter;
+        margin-bottom: 1vw;
+        &__header {
+            display: flex;
+            align-items: flex-start;
+            margin-left: 0;
+            margin-right: auto;
+            width: 100%;
+            p {
+                font-size: x-large;
+                margin: 0.3vw;
+                text-align: left;
+                margin-right: 22%;
+                font-family: "Courier New";
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 0;
+            margin-right: auto;
+            p {
+                font-size: x-large;
+                margin: 0.3vw;
+                text-align: left;
+                font-family: "Courier New";
+            }
+
+        }
+    }
+
+    &__footer {
+        align-items: flex-end;
+        margin-left: 0;
+        margin-right: auto;
+
+        p {
+            font-size: x-large;
+            margin: 0.3vw;
+            text-align: left;
+        }
+    }
+}

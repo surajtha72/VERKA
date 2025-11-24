@@ -1,0 +1,163 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.productstocks {
+  position: relative;
+  width: calc(100% - 18vw);
+  .disabled-button {
+    opacity: 0.5;
+  }
+  .Cbody {
+    width: 95%;
+    margin-top: 1vw;
+  }
+  .MuiPaper-root {
+    padding: 1vw;
+    background-color: $paper-white;
+  }
+  &__container {
+    @include flexColumnACenter;
+    background: $bg_light_grey;
+    height: 100%;
+    overflow-y: scroll;
+  } 
+  &__header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: $font_xsmall $font_xsmall;
+    @include flexColumnACenter;
+    background: $primary_white;
+    margin-bottom: 1vw;
+    &__section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__main {
+        padding: 0 0 0.3vw 0;
+        @include flexbetween;
+        flex-direction: column;
+        h4 {
+          font-size: $font_button;
+        }
+        h5 {
+          font-size: $font_verysmall;
+          color: $font_grey;
+          font-weight: 400;
+        }
+      }
+      &__bottom {
+        h4 {
+          font-size: $font_button;
+        }
+      }
+    }
+    border-bottom: 1px solid #0e419d;
+  }
+  &__table {
+    padding: $font_regular 0;
+    width: 98%;
+
+    &__pagination {
+      @include flexCenter;
+      &__container {
+        select{
+          width:5vw;
+          margin-right: 1vw;
+        }
+        @include flexCenter;
+        ul {
+          padding: 0;
+          margin: 0;
+          @include flexCenter;
+          li {
+            list-style-type: none;
+            width: 4vw;
+            a {
+              text-decoration: none;
+              color: $grey_input;
+            }
+          }
+          .active {
+            a {
+              color: $primary_black;
+            }
+          }
+        }
+      }
+    }
+
+    &__header {
+      padding: 0 0 $font_xlarge 0;
+      &__section {
+        @include flexbetween;
+        input {
+          width: 25%;
+        }
+        button {
+          width: auto;
+          border: 1px solid grey;
+          background: #0e419d;
+          padding: 0.6vw 2vw;
+          border-radius: $font_xsmall;
+          color: $primary_white;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      img {
+        width: 3vw;
+        padding: 0 0 0 1vw;
+        cursor: pointer;
+      }
+    }
+    .col-lg-2 {
+      margin-bottom: $font_xsmall;
+    }
+    .striped-table tbody tr,
+    th {
+      background-color: transparent;
+      font-size: $font_xsmall !important;
+      color: $primary_white;
+    }
+    .striped-table tbody tr,
+    td {
+      background-color: $paper-white !important;
+    }
+    .striped-table tbody tr:nth-child(odd) {
+      background-color: #ffff;
+    }
+    .striped-table tbody tr:nth-child(even) {
+      background-color: #d2e3fc;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #0e419d;
+      color: $primary_white;
+    }
+  }
+  .col-lg-4.col-md-2.col-sm-3 {
+    margin-bottom: 0.5vw !important ;
+  }
+
+  .form-label {
+    font-size: 0.9vw;
+    margin-bottom: 0 !important;
+  }
+  &__popup {
+    position: absolute;
+    top: 5.9vw;
+    width: 100%;
+    @include flexJCenter;
+    background: $bg_light_grey;
+    &__container {
+      width: 90%;
+    }
+  }
+}

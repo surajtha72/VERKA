@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+// font families
+@font-face {
+  font-family: $monstserrat_black;
+  src: url($monstserrat_black_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_bold;
+  src: url($monstserrat_bold_file) format('opentype');
+}
+
+@font-face {
+  font-family: $monstserrat_extrabold;
+  src: url($monstserrat_extrabold_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_italic;
+  src: url($monstserrat_italic_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_light;
+  src: url($monstserrat_light_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_medium;
+  src: url($monstserrat_medium_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_regular;
+  src: url($monstserrat_regular_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_semibold;
+  src: url($monstserrat_semibold_file) format('opentype');
+}
+@font-face {
+  font-family: $monstserrat_thin;
+  src: url($monstserrat_thin_file) format('opentype');
+}

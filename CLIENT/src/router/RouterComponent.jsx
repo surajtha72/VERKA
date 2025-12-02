@@ -83,7 +83,7 @@ import VehicleAttendance from "../app/pages/reports/vehicle attendance sheet/Veh
 import VehicleAttendanceForm from "../app/pages/reports/vehicle attendance sheet/VehicleAttendanceForm";
 import CollectionEntry from "../app/pages/mdm/collectionEntry/CollectionEntry";
 import FarmerMaster from "../app/pages/organization/organizationlist/FarmerMaster";
-
+import MilkDispatchTester from "../app/pages/test/MilkDispatchTester";
 const HeaderWithCondition = () => {
   const location = useLocation();
   const hideHeader =
@@ -186,6 +186,8 @@ function RouterComponent() {
         <Route path="vehicle-attendance" element={<VehicleAttendance />} />
         <Route path="collection-entry" element={<CollectionEntry/>}/>
         <Route path="farmer-master" element={<FarmerMaster/>}/>
+                <Route path="test" element={<MilkDispatchTester/>}/>
+
       </Routes>
     </Router>
   );
